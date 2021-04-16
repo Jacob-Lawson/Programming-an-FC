@@ -3,19 +3,19 @@
     Created by: Jacob Lawson
     Date: 03/08/2020
 */
-
+gegwregrgegergeg
 #include <Servo.h>  // required library for the commands used below
-
+sdsdfsfsfs
 // RGB LED output ports
 #define BLUE 3
 #define GREEN 5
 #define RED 6
-
+ehebe raergwwef
 #define WINDOW_SIZE 5
-
+ewwerwerwe
 Servo myservo;  // create servo object to control a servo
 // twelve servo objects can be created on most boards
-
+vbbcbcvbcb
 //hi
 
 int INDEX = 0;
