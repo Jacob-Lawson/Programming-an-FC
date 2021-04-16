@@ -16,16 +16,7 @@
 Servo myservo;  // create servo object to control a servo
 // twelve servo objects can be created on most boards
 
-int pos = 0;    // variable to store the servo position
-int POTPin = A0;  // potentionmeter input at pin A0;
-int POTreadvalue; // read value variable
-int DataFreq1;     // user defined rate of data collection
-int DataFreq2;     // rate of servo control
-float Voltage;      // true voltage value across potentionmeter
-int redValue;       // rgb RED value
-int greenValue;     // rgb green value
-int blueValue;      // rgb BLUE value
-int ColourCycle = 255;
+
 
 int INDEX = 0;
 int SUM = 0;
@@ -97,14 +88,6 @@ void loop() {
   Serial.println(AVERAGED);
   
   delay(DataFreq1);
-
-  if ( Voltage > 4.00){
-
-      blueValue = Voltage * 51;
-      analogWrite(BLUE, blueValue);
-      analogWrite(GREEN, 0);
-      analogWrite(RED, 0);
-      delay(DataFreq1);
 
       myservo.write(POTreadvalue/5.7);  // tell servo to go to position in variable 'pos'
       delay(15);                       // waits 15ms for the servo to reach the position
