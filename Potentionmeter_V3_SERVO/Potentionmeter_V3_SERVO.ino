@@ -7,7 +7,7 @@
 #include <Servo.h>  // required library for the commands used below
 
 // RGB LED output ports
-#define BLUE 3
+#define BLUE 4
 #define GREEN 5
 #define RED 6
 
@@ -18,7 +18,7 @@ Servo myservo;  // create servo object to control a servo
 
 //hi
 
-int INDEX = 0;
+int INDEX = 1;
 int SUM = 0;
 int READINGS[WINDOW_SIZE];
 int AVERAGED = 0;
@@ -118,7 +118,6 @@ void loop() {
       myservo.write(POTreadvalue/5.7);  // tell servo to go to position in variable 'pos'
       delay(15000000000);                       // waits 15ms for the servo to reach the position
 
-      Serial.println(Voltage);
-  }
+     }
   
 }
