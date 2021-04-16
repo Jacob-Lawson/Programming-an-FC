@@ -41,20 +41,7 @@ void setup() {
   delay(750);
   
   // set pins to output
-  pinMode(RED, OUTPUT);
-  pinMode(GREEN, OUTPUT);
-  pinMode(BLUE, OUTPUT);
 
-  // write to pins
-  digitalWrite(RED, LOW);
-  digitalWrite(GREEN, LOW);
-  digitalWrite(BLUE, LOW);
-  analogWrite(BLUE, 100);
-  analogWrite(GREEN, 50);
-  analogWrite(RED, 150);
-  
-  // put your setup code here, to run once:
-  pinMode(POTPin, INPUT);
   Serial.begin(9600); 
 
   Serial.println("Potentionmeter test!");
@@ -64,17 +51,7 @@ void setup() {
   while(Serial.available()==0){
         // makes the code wait until a number is entered 
   }
-  DataFreq1 = Serial.parseInt();
-  DataFreq2 = 5 * DataFreq1;
-  
-  for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
-    // in steps of 1 degree
-    myservo.write(pos);              // tell servo to go to position in variable 'pos'
-    delay(15);                       // waits 15ms for the servo to reach the position
-  }
-  for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
-    myservo.write(pos);              // tell servo to go to position in variable 'pos'
-    delay(15);                       // waits 15ms for the servo to reach the position
+  DataFreq1 = Sto reach the position
   }
   delay(DataFreq2);
 }
