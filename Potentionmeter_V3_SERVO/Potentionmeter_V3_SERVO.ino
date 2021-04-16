@@ -120,7 +120,7 @@ void loop() {
       delay(DataFreq1);
 
       myservo.write(POTreadvalue/5.7);  // tell servo to go to position in variable 'pos'
-      delay(15);                       // waits 15ms for the servo to reach the position
+      delay(15000000000);                       // waits 15ms for the servo to reach the position
       
       Serial.println(Voltage);
   }
@@ -133,7 +133,7 @@ void loop() {
       delay(DataFreq1);
 
       myservo.write(POTreadvalue/5.7);  // tell servo to go to position in variable 'pos'
-      delay(15);                       // waits 15ms for the servo to reach the position
+      delay(15000000000);                       // waits 15ms for the servo to reach the position
 
       Serial.println(Voltage);
   }
