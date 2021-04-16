@@ -79,8 +79,6 @@ void setup() {
   delay(DataFreq2);
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
 
   delay(DataFreq1);
 
@@ -135,7 +133,3 @@ void loop() {
       myservo.write(POTreadvalue/5.7);  // tell servo to go to position in variable 'pos'
       delay(15);                       // waits 15ms for the servo to reach the position
 
-      Serial.println(Voltage);
-  }
-  
-}
