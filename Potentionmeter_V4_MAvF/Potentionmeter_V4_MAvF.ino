@@ -6,6 +6,18 @@
 
 #include <Servo.h>  // required library for the commands used below
 
+#        ~+
+#
+#                 *       +
+#           '                  |
+#       ()    .-.,="``"=.    - o -
+#             '=/_       \     |
+#          *   |  '=._    |
+#               \     `=./`,        '
+#            .   '=.__.=' `='      *
+#   +                         +
+#        O      *        '       .
+
 // RGB LED output ports
 #define BLUE 3
 #define GREEN 5
