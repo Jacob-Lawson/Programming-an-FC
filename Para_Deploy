@@ -1,0 +1,51 @@
+/*
+ * Initial- Parachute Deployment codes
+ * By Rhithika & Rashmita under guidance of Zefy
+ * Date: 4/05/2021
+ * 
+ * 
+ * // add the digital pins to set to high when Apogee is detected.
+ * // in apogeee function add one more condition based on another analog reading 
+ * (e.g. other potentiometer or in our real case the accelerometer) 
+ * //turn the digital pin code into a function itself as well and call it ''deploy_payload();
+ */
+
+const int Amax = 0 ;
+// define the function with void apogeedetection();; 
+const int apogee = 0;
+void apogeedetection(/*values recorded or could assign int*/,/*vales recorded*/ );
+
+void setup() { 
+  
+ Serial.begin(9600); // initialize the serial communication
+                     // Note: analog pins are automatically set as inputs
+  pinMode(,INPUT)
+  pinMode(,OUTPUT)
+  pinMode(,OUTPUT)   //set two digital pins as outputs that are on low state
+}
+
+void loop() {
+
+digitalRead(/*output pin*/,digitalRead(/*input pin*/) )
+digitalWrite()
+apogeedetection();          //calling the apogee reading
+  if (apogee == 1 ) {
+    digitalRead(/**/,HIGH)
+    digitalRead(/**/,HIGH)  //set two digital pins to be HIGH
+    deploypayload();
+    }
+  }
+
+// starting the apogee function
+void apogeedetection() { 
+int a = analogRead(A0);     // get a reading from the altitude potentiometer on A0
+Serial.println(a);          // print out the current altitude
+if (a<Amax || a==Amax){     //if altitude is over Amax, set new Amax
+  Amax = a;                 //set new Amax
+  Serial.println(Amax);
+}else if (a>b){
+  Serial.print("APOGEE REACHED AT,%d"); Serial.print(Amax); 
+  apogee = 1;
+        }
+
+}
